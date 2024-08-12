@@ -8,18 +8,7 @@ namespace ArrayList_Programs
         static void Main(string[] args)
         {
             
-            ArrayList list = new ArrayList();
-
-            list.Add("Ashish");
-            list.Add(1);
-            list.Add(3.14);
-            list.Add(true);
-
-            foreach(var item in list)
-            {
-                Console.WriteLine(item);
-            }
-
+            Console.WriteLine("LinkedList");
 
         }
     }
