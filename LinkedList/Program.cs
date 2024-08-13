@@ -1,15 +1,29 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
-namespace ArrayList_Programs
+namespace LinkedList
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            
-            Console.WriteLine("LinkedList");
+            LinkedList<string> linkedList = new LinkedList<string>();
 
+            linkedList.AddLast("Apple");
+            linkedList.AddLast("Banana");
+            linkedList.AddLast("Cherry");
+
+            LinkedListNode<string> node = linkedList.Find("Banana");
+
+            if (node != null)
+            {
+                Console.WriteLine("Element found: " + node.Value);
+            }
+            else
+            {
+                Console.WriteLine("Element not found");
+            }
         }
     }
 }
